@@ -1,10 +1,10 @@
 function showSidebar() {
     const  mobileNav = document.querySelector('.mobile-nav');
-    mobileNav.style.display = "flex"
+    mobileNav.style.right = "0vw"
 
 }function hideSidebar() {
     const  mobileNav = document.querySelector('.mobile-nav');
-    mobileNav.style.display = "none"
+    mobileNav.style.right = "-100vw"
 
 }
 
