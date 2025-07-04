@@ -180,7 +180,7 @@ body{
 }
 .profile{
     position: relative;
-    width: 42vw;   
+    width: 38vw;   
     bottom: -5vw;
     z-index: -1;
     filter: drop-shadow(0px 10px 15px rgba(129, 129, 129, 0.5));
@@ -267,7 +267,7 @@ body{
     width: 32vw;
     border: 6px solid gray;
     border-radius: 50%;
-    background-image: url(./Image/about1.png);
+    background-image: url(./Image/pf.jpg);
     background-size: cover;
     margin-left: 3vw;
     margin-top: 2vw;
@@ -563,8 +563,8 @@ body{
     z-index: 9999;
 }
 .cert-img{
-    height: 80%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -572,6 +572,11 @@ body{
 }
 .cert-img img{
     height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -1146,15 +1151,19 @@ body{
     z-index: 9999;
 }
 .cert-img{
-    height: 30%;
-    width: 30%;
+    height: 100%;
+    width: 100%;
     top: 50%;
-    left: 20%;
+    left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
 }
 .cert-img img{
-    height: 100%;
+    height: auto;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
 }
     
 
