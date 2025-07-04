@@ -27,10 +27,12 @@ rightButton.addEventListener("click", scrollRight);
 
 document.querySelectorAll('.exp-title a').forEach(a => {
     a.onclick = (event) => {
+        document.querySelector('.loading-spinner').style.display = 'block';
         event.preventDefault();
         const img = document.querySelector('.certificate img');
         img.src = a.getAttribute('href');
         img.onload = () => {
+            document.querySelector('.loading-spinner').style.display = 'none';
             document.querySelector('.certificate').style.display = 'block';
         };
     }
