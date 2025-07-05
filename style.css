@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 html{
@@ -13,7 +14,7 @@ body{
     
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: #151515;
     overflow-x: hidden;
 }
 
@@ -27,6 +28,8 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
 }
+
+
 .loading-spinner {
     position: fixed;
     top: 50%;
@@ -98,17 +101,17 @@ body{
     display: none;
 }
 .nav-btn{
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     background-color: transparent;
     text-decoration: none;
     height: 5vh;
     width: 10vw;
     font-weight: 600;
-    font-family: sans-serif;
     text-align: center;
     border: 1px solid transparent;
     border-radius: 20px;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     align-content: center;
 }
 .x{
@@ -119,9 +122,8 @@ body{
     border: 1px solid transparent;
     border-radius: 20px;    
     text-align: center;
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
-
 .right-nav i{
     color: white;
     font-weight: 600;
@@ -156,20 +158,23 @@ body{
     align-items: flex-start;
 }
 .name{
+    font-family: "Montserrat", sans-serif;
     font-size: 3.3vw;
     padding-bottom: .4rem;
     cursor: pointer;
     background-color: transparent;
 }
 .hi{
+    font-family: "Montserrat", sans-serif;
     font-size: 2vw;
     cursor: pointer;
     
    
 }
 .role{
+    font-family: "Montserrat", sans-serif;
     color: #909090;
-    font-size: 2.2vw;
+    font-size: 2vw;
     font-weight: 600;
     cursor: pointer;
 }
@@ -186,11 +191,35 @@ body{
 .acc{
     height: 10vh;
     width: 10vw;
-    padding-top: 2rem;
+    margin-top: 1rem;
 
 }
 .link i{
     font-size: 4vw;
+    color: black;
+}
+.resume{
+    height: 10vh;
+    position: relative;
+    width: 35vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    margin-top: 1rem;
+}
+.resume div{
+    height: 6vh;
+    width: 12vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px 5px 2px 5px;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 1.5vw;
+}
+.resume div a{
+    text-decoration: none;
     color: black;
 }
 .rightdiv{
@@ -198,17 +227,11 @@ body{
     position: relative;
     height: 100%;
     width: 50%;
-    justify-content: center;
-    align-items: flex-end;
-}
-.profile{
-    position: relative;
-    width: 38vw;   
-    bottom: -5vw;
-    z-index: -1;
-    filter: drop-shadow(0px 10px 15px rgba(129, 129, 129, 0.5));
-
-
+    justify-self: center;
+    overflow: hidden;
+    background-image: url(./Image/elem.gif);
+    background-size: cover;
+    bottom: 5vw;
 }
 
 /* default */
@@ -241,8 +264,11 @@ body{
     align-content: center;
     border: 8px solid black;
     letter-spacing: .6vw;
-
+    /* animation: sspin 1s linear infinite; */
+   
 }
+
+ 
 /* about section */
 
 
@@ -269,6 +295,7 @@ body{
 }
 
 .right-about h2{
+    font-family: "Nunito Sans", sans-serif;
     color: black;
     font-size: 8vw;
     height: 25%;
@@ -285,16 +312,52 @@ body{
     margin-top: 2vw;
     color: rgba(0, 0, 0, 0.815);
 }
-.about-img{
-    height: 65vh;
-    width: 32vw;
-    border: 6px solid gray;
+.about-img {
+    height: 34vw;
+    width: 37vw;
+    position: relative;
+    box-sizing: border-box;
     border-radius: 50%;
-    background-image: url(./Image/pf.jpg);
-    background-size: cover;
     margin-left: 3vw;
     margin-top: 2vw;
-    box-shadow: 0px 0px 30px black;
+    overflow: hidden;
+}
+
+.about-img::before {
+    content: "";
+    position: absolute;
+    left: -6vw;
+    height: 45vw;
+    width: 45vw;
+    background-image: conic-gradient(transparent, transparent, transparent, #FEE600);
+    z-index: 0;
+    border-radius: 50%;
+    animation: rotate 4s linear infinite; 
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.about-img div {
+    height: 32vw;
+    width: 32vw;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-image: url(./Image/1.png);
+    background-size: cover;
+    box-shadow: 0px 0px 30px #FEE600;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
 }
 
 /* skill section */
@@ -331,6 +394,15 @@ body{
     font-size: 1.4vw;
     font-weight: 500;
 }
+.skill-img{
+        height: 6vw;
+    }
+
+.skill-img:hover{
+    filter : drop-shadow(0px 0px 50px #FEE600);
+    transition: all .25s ease-in-out 0.1s;
+    transform: scale(1.2,1.2);
+}
 
 /* experience */
 
@@ -355,9 +427,11 @@ body{
 }
 
 .left-exp h2{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
     writing-mode: vertical-lr;
     text-orientation:mixed;
-    font-size: 4.6vw;
+    font-size: 4vw;
     letter-spacing: .5vw;
     align-content: center;
     margin-right: 5vw;
@@ -410,12 +484,22 @@ body{
 }
 .exp-card{
     flex: 0 0 80%;
-    height: 100%;
+    height: 95%;
     width: 80%;
     gap: 3vw;
-    margin: 0vw 3vw 0vw 0vw;
+    margin: 0vw 3vw 0vw 3vw;
     background-color:rgba(255, 255, 255, 0.678);
     border-radius: 20px;
+    border: transparent;
+}
+
+.exp-card:hover{
+    
+    border: 3px solid #FEE600;
+    transform: scale(1.02,1.02);
+    transition: all 0.1s ease-in-out 0s;
+    
+
 }
 
 .scroll-btn{
@@ -459,7 +543,7 @@ body{
     width: 88%;
     height: 100%;
     color: #534e4e;
-    font-size: 1.9vw;
+    font-size: 1.8vw;
 }
 
 .exp-title a{
@@ -622,7 +706,7 @@ body{
 
     .greyBack{
         opacity: 60%;
-        height: 90%;
+        height: 100%;
         width: 90%;
         transform: rotate(74deg);
         top: initial;
@@ -737,8 +821,8 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding-bottom: 1.5rem;
         padding-left: 2rem;
+        margin-bottom: 1.5rem;
     }
     .name{
         font-size: 4vh;
@@ -750,7 +834,7 @@ body{
     }
     .role{
         color: #534e4e;
-        width: 23vh;
+        width: 60vw;
         font-size: 2vh;
         font-weight: 600;
         cursor: none;
@@ -761,6 +845,29 @@ body{
         font-size: 2.5vh;
         cursor: none;
     }
+    .resume{
+    height: 5vh;
+    position: relative;
+    width: 60vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    margin-top: .5rem;
+}
+.resume div{
+    height: 4vh;
+    width: 35vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 2.5vh;
+}
+.resume div a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
     
     .social{
         height: 100%;
@@ -783,21 +890,15 @@ body{
     .rightdiv{
         display: flex;
         position: absolute;
-        height:100%;
+        height:50%;
         width: 100%;
         padding-right: initial;
-        justify-content: flex-start;
-        align-items: flex-end;
+        justify-content: center;
+        align-items: center;
         margin-right: initial;
         margin-top: initial;
         z-index: -1;
-    }
-    .profile{
-        height: 70vh; 
-        width: initial; 
-        bottom: 0vh; 
-        right: 5vh;
-        
+        margin-bottom: 30vh;
     }
 
     /* about section */
@@ -862,6 +963,16 @@ body{
         margin-top: initial;
         box-shadow: initial;
     }
+
+
+.about-img::before {
+display: none;
+}
+
+
+.about-img div {
+   display: none;
+}
     
     /* skill */
 
@@ -918,6 +1029,14 @@ body{
         font-size: 2vh;
         font-weight: 500;
     }
+    .skill-img{
+        height: 8vh;
+    }
+    .skill-img:hover{
+        transform: none;
+        filter: none;
+    }
+    
 
     /* experience */
 
@@ -1008,7 +1127,9 @@ body{
     margin: 3vh 0vh 3vh 0vh;
     background-color:rgba(255, 255, 255, 0.678);
     border-radius: 20px;
+    
 }
+
 
 .scroll-btn{
     display: none;
@@ -1044,7 +1165,7 @@ body{
     width: 88%;
     height: 100%;
     color: #534e4e;
-    font-size: 1.4vh;
+    font-size: 1.5vh;
 }
 
 .exp-title a{

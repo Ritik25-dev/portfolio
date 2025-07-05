@@ -6,6 +6,9 @@
     <title>Portfolio</title>
     <link rel = "stylesheet" href = "./style.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main" id="home">
@@ -17,9 +20,9 @@
                 </a>
             </div>
             <div class="right-nav"> 
-                <a href="#about"class="nav-btn zoom"> About me</a>
-                <a href="#skills"class="nav-btn zoom"> Skills</a>
-                <a href="#experience"class="nav-btn zoom"> Experience</a>
+                <a href="#about"class="nav-btn zoom"> ABOUT ME</a>
+                <a href="#skills"class="nav-btn zoom"> SKILLS</a>
+                <a href="#experience"class="nav-btn zoom"> ACHIEVEMENTS</a>
                 <a href="#contact" class="nav-btn x zoom"> CONTACT ME</a>
                 <i onclick="showSidebar()" class="fa-solid fa-bars"></i>
             </div> 
@@ -38,6 +41,12 @@
                     <p class="hi"> Hi, I am </p>
                     <h1 class="name zoom">RITIK KUMAR GUPTA</h1>
                     <p class="role zoom"> Frontend Developer / Student </p>
+                    <div class="resume">
+                    <div>
+                        <a href="./Image/Ritik_cv.pdf" download>Resume
+                        <i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
                 </div>
                 <div class="social">
                     <div class="acc">
@@ -57,15 +66,15 @@
                     </div>
                 </div>
             </div>
-            <div class="rightdiv">
-                <img src="./Image/mainn.png" alt="profile pic" class="profile">
-            </div>
+            <div class="rightdiv"></div>
         </div>
 
     </div>
     <div class="about int" id="about">
         <div class="content-about">
-            <div class="about-img"></div>
+            <div class="about-img a">
+                <div></div>
+            </div>
             <div class="right-about">
                 <h2>ABOUT ME</h2>
                 <p>I am a Computer Science student at Hansraj College, Delhi University, with a passion for technology and innovation. As a frontend developer exploring full-stack development, I enjoy creating user-friendly and efficient web applications. I actively participate in hackathons and ideathons, collaborating with teams to solve real-world problems through technology. Always eager to learn and adapt, I strive to expand my skill set and explore emerging technologies to build impactful digital solutions. Beyond development, I am interested in UI/UX design, ensuring seamless and engaging user experiences. I believe in continuous learning and hands-on experience to stay ahead in the ever-evolving tech industry.</p>
@@ -91,7 +100,7 @@
                     <p>JAVASCRIPT</p>
                 </div>
                 <div class="img-cont">
-                    <img class="skill-img" src="./Image/appscript.png" alt="img" style="height: 100px; width: 100px;">
+                    <img class="skill-img" src="./Image/appscript.png" alt="img">
                     <p>APPSCRIPT</p>
                 </div>
             </div>
@@ -101,7 +110,7 @@
                     <p>FIGMA</p>
                 </div>
                 <div class="img-cont">
-                    <img class="skill-img" src="./Image/appsheet.png" alt="img" height="102px">
+                    <img class="skill-img" src="./Image/appsheet.png" alt="img" >
                     <p>APPSHEET</p>
                 </div>
                 <div class="img-cont">
@@ -121,7 +130,7 @@
         </div>
         <div class="exp-cont">
             <div class="left-exp">
-                <h2>EXPERIENCE</h2>
+                <h2>ACHIEVEMENTS</h2>
             </div>
             <div class="right-exp">
                 <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
@@ -144,7 +153,7 @@
                     </div>
                     <div class="exp-card">
                         <div class="exp-title">
-                            <h3>Team Leader – National Science Day (Hansraj College) <a href="./Image/about1.png">  | Certificate</a></h3>
+                            <h3>Team Leader – National Science Day (Hansraj College) <a href="./Image/nsd.jpg">  | Certificate</a></h3>
                         </div>
                         <div class="exp-p">
                             <p>Led my team to second place in the National Science Day competition at Hansraj College, focusing on Sustainable Development in India. Conducted thorough research on sustainability issues and designed a technology-based solution to address environmental challenges. I worked on building a prototype, preparing reports, and delivering a strong presentation to highlight the solution’s impact. Successfully coordinated with my team to ensure a smooth workflow and effectively explained our idea to judges and faculty. This experience strengthened my research, problem-solving, teamwork, and public speaking skills.</p>
