@@ -225,8 +225,8 @@ body{
 .rightdiv{
     display: flex;
     position: relative;
-    height: 100%;
-    width: 50%;
+    height: 50vw;
+    width: 50vw;
     justify-self: center;
     overflow: hidden;
     background-image: url(./Image/elem.gif);
@@ -706,12 +706,12 @@ body{
 
     .greyBack{
         opacity: 60%;
-        height: 100%;
+        height: 150vh;
         width: 90%;
         transform: rotate(74deg);
         top: initial;
         left: 10vw;
-        bottom: -34vh;
+        bottom: -60vh;
         z-index: 0;
     }
     .navbar{
@@ -799,7 +799,7 @@ body{
         height: 90%;
         width: 100%;
         flex-direction: column-reverse;
-        align-items: flex-end;
+        align-items: center;
         margin-top: 8vh;
 
     }.leftdiv{
@@ -890,15 +890,15 @@ body{
     .rightdiv{
         display: flex;
         position: absolute;
-        height:50%;
-        width: 100%;
+        height:500px;
+        width: 500px;
         padding-right: initial;
         justify-content: center;
         align-items: center;
         margin-right: initial;
         margin-top: initial;
         z-index: -1;
-        margin-bottom: 30vh;
+        margin-bottom: 20vh;
     }
 
     /* about section */
